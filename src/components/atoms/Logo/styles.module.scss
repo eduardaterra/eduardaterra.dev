@@ -1,0 +1,23 @@
+.wrapper {
+  &[data-size="small"] {
+    font-size: 1rem;
+  }
+  &[data-size="medium"] {
+    font-size: 1.5rem;
+  }
+  &[data-size="large"] {
+    font-size: 2rem;
+  }
+
+  b {
+    background: linear-gradient(
+      to right,
+      var(--purple-200) 0%,
+      var(--turquoise-200) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+

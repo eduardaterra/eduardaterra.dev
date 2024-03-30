@@ -1,0 +1,35 @@
+.link {
+  all: unset;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s;
+
+  &[data-size="small"] {
+    font-size: 0.75rem;
+  }
+
+  &[data-size="medium"] {
+    font-size: 1rem;
+  }
+
+  &[data-size="large"] {
+    font-size: 1.25rem;
+  }
+
+  &[data-size="x-large"] {
+    font-size: 2rem;
+  }
+
+  &[data-underline="true"] {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  &[data-variant="primary"]:hover {
+    color: var(--purple-200);
+  }
+  &[data-variant="secondary"]:hover {
+    color: var(--turquoise-200);
+  }
+}
+
